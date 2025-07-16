@@ -15,7 +15,7 @@ interface Document {
   content?: string;
 }
 
-export function Documentation() {
+export default function Documentation() {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentView, setCurrentView] = useState<"list" | "edit" | "create">("list");
   const [selectedDoc, setSelectedDoc] = useState<Document | null>(null);
